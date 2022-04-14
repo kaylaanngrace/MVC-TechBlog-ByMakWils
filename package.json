@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/kaylaanngrace/MVC-TechBlog-ByMakWils#readme",
   "dependencies": {
-    "bcrpyt": "^2.0.0",
+    "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
