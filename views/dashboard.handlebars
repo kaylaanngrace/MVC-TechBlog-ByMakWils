@@ -1,0 +1,32 @@
+<section>
+  <h2 class="d-flex justify-content-center p-3">Create New Post</h2>
+
+  <form class="new-post-form container col-8">
+      <div class="form-floating mb-3 ">
+          <input type="text" id="post-title" name="post-title" placeholder="title" class="form-control"/>                
+          <label for="post-title">Title</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea name="post-content" class="form-control" placeholder="Talk your Tech" id="post-content"></textarea>
+        <label for="post-content">Talk your Tech</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+  </form>
+</section>
+
+{{#if posts.length}}
+<section class="container">
+  <h2 class="d-flex justify-content-center">Your Posts</h2>
+  <ul class="list-group">
+    {{#each posts as |post|}}
+    <li class="list-group-item"> 
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a>
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+
+
+<script src="/public/javascript/new-post.js"></script>
