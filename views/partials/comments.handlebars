@@ -1,12 +1,14 @@
 <div class="container">
+    <h5 class="">Comments:</h5>
     <ul class="list-group comments">
         {{#each this}}
         <li class="comment list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 meta">{{user.username}}</h5>
-            <small class="meta">{{format_date created_at}}</small>
+            
+            <p class="mb-2 commentText">{{comment_text}}</p>
+            <small class="meta userDate">{{format_date created_at}}</small>
         </div>
-        <p class="mb-1 text">{{comment_text}}</p>
+        <p class="mb-1 meta userComment">Commented by <a href="">{{user.username}}</a></p>
         </li>
         {{/each}}
     </ul>

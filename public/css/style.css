@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(-45deg, #835DE3, #5DA6E3, #D067FB);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+footer {
+    color: rgba(0, 0, 0, 0.632);
+    border-top: 1px solid rgba(0, 0, 0, 0.632);
+    background-color: white;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*navbar*/
+#nav {
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: black;
+    
+}
+
+#nav-item {
+    color: black;
+}
+
+#nav-item:hover {
+    color: #835DE3;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* dashboard */
+.post-li, .comment {
+    background-color:rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    filter: drop-shadow(0 0 10px black);
+    border: 3px solid white;
+}
+
+#post-content, #comment-body {
+    height: 100px;
+}
+/* post-info */
+.userDate a, .userComment a {
+    color: rgba(202, 174, 35);
+}
+
+.post .title a {
+    color: rgb(202, 35, 107);
+    text-decoration: none;
+    font-size: large;
+}
+
+.post .post-body a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.userComment, .userDate {
+    color: rgba(0, 0, 0, 0.55)
+}
+
+
+
+
+/*create account*/
+#create-acct {
+    background-color:rgb(255, 255, 255, 0.3);
+    filter: drop-shadow(0 0 10px black);
+    border: 3px solid #FDF7E3;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    height:550px;
+}
+
+/*login*/
+#login-acct {
+    background-color:rgb(255, 255, 255, 0.3);
+    filter: drop-shadow(0 0 10px black);
+    border: 3px solid white;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    height:500px;
+}
+

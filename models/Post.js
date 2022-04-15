@@ -21,6 +21,9 @@ Post.init(
     post_content: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        max: 250
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
