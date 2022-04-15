@@ -3,7 +3,7 @@ const Post = require('./Post');
 const User = require('./User');
 const Comment = require('./Comment');
 
-// associations for post, user and comment
+// associations for post, user
 User.hasMany(Post, {
   foreignKey: 'user_id'
 });
@@ -23,7 +23,7 @@ Post.belongsToMany(User, {
   onDelete: 'SET NULL'
 });
 
-
+// associations for comments
 Comment.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
