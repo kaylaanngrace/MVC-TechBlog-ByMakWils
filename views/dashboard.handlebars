@@ -1,19 +1,25 @@
+{{!-- new post form --}}
 <section>
   <h2 class="d-flex justify-content-center p-3">Create New Post</h2>
 
   <form class="new-post-form container col-8">
       <div class="form-floating mb-3 ">
+        {{!-- new post title input --}}
           <input type="text" id="post-title" name="post-title" placeholder="title" class="form-control"/>                
           <label for="post-title">Title</label>
       </div>
+      {{!-- new post textarea for content --}}
       <div class="form-floating mb-3">
         <textarea name="post-content" class="form-control" placeholder="Talk your Tech" id="post-content"></textarea>
         <label for="post-content">Talk your Tech</label>
       </div>
+      {{!-- submit new post button --}}
       <button type="submit" class="btn btn-primary">Create</button>
   </form>
 </section>
+{{!-- end of new post form --}}
 
+{{!-- posts list --}}
 {{#if posts.length}}
 <section class="container">
   <h2 class="d-flex justify-content-center">Your Posts</h2>
@@ -27,6 +33,7 @@
   </ul>
 </section>
 {{/if}}
+{{!-- end of posts list --}}
 
 
 <script src="/public/javascript/new-post.js"></script>
