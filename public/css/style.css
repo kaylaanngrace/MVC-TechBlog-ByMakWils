@@ -103,26 +103,3 @@ footer {
 
 
 
-
-/*create account*/
-#create-acct {
-    background-color:rgb(255, 255, 255, 0.3);
-    filter: drop-shadow(0 0 10px black);
-    border: 3px solid #FDF7E3;
-    margin-top: 30px;
-    border-radius: 15px;
-    font-size: 1.5em;
-    height:550px;
-}
-
-/*login*/
-#login-acct {
-    background-color:rgb(255, 255, 255, 0.3);
-    filter: drop-shadow(0 0 10px black);
-    border: 3px solid white;
-    margin-top: 30px;
-    border-radius: 15px;
-    font-size: 1.5em;
-    height:500px;
-}
-
